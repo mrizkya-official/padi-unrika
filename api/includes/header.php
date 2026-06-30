@@ -7,14 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top py-2">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center text-decoration-none" href="../index.php">
-                <img src="../assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo-full">
+                <img src="../../assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo-full">
                 <div class="brand-text-container ms-3 text-primary fw-bold" style="line-height: 1.1;">
                     <div style="font-size: 1.25rem; font-weight: 800; color: #0c4a6e;">Perpustakaan</div>
                     <div style="font-size: 0.85rem; font-weight: 600; color: #0369a1;">Universitas Riau Kepulauan</div>
