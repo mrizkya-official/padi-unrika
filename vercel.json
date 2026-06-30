@@ -4,14 +4,9 @@
       "runtime": "vercel-php@0.8.0"
     }
   },
-  "routes": [
-    { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/beranda", "dest": "/api/index.php" },
-    { "src": "/profil", "dest": "/api/profil.php" },
-    { "src": "/layanan", "dest": "/api/layanan.php" },
-    { "src": "/daftar-hadir", "dest": "/api/daftar-hadir.php" },
-    { "src": "/referensi", "dest": "/api/referensi.php" },
-    { "src": "/kontak", "dest": "/api/kontak.php" },
-    { "src": "/", "dest": "/api/index.php" }
+  "rewrites": [
+    { "source": "/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/(.*).php", "destination": "/api/$1.php" },
+    { "source": "/", "destination": "/api/index.php" }
   ]
 }
