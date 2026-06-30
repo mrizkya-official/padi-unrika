@@ -26,12 +26,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/index.php">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/profil.php">Profil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/layanan.php">Layanan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/daftar-hadir.php">Daftar Hadir</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/referensi.php">Referensi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/kontak.php">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil.php">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="layanan.php">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="daftar-hadir.php">Daftar Hadir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="referensi.php">Referensi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.php">Kontak</a></li>
                 </ul>
             </div>
         </div>
