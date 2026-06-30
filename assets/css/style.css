@@ -1,0 +1,188 @@
+/* style.css */
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #0284c7;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Pengaturan logo brand perpustakaan agar seragam dan proporsional */
+.navbar-logo-full {
+    height: 48px; 
+    width: auto;
+    display: block;
+}
+
+.sticky-top {
+    z-index: 1020;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* (Tambahkan sisa kode CSS asli Anda di sini jika ada) */
+
+.hero-section {
+    /* Perhatikan bagian url('../img/unrika.png'), pastikan nama file gambarnya sesuai (background.png atau unrika.png) */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/unrika.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 180px 0; 
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #0d6efd;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    padding: 0; /* Menghilangkan jarak bawaan navbar agar logo tidak mendistorsi teks */
+}
+
+/* Mengatur ukuran dan display logo agar posisinya stabil secara vertikal */
+.navbar-logo {
+    height: 75px;
+    width: auto;
+    display: block;
+}
+
+.brand-text-container {
+    margin-left: 15px; 
+    color: #0c4a6e;
+    display: flex;
+    flex-direction: column; /* Menyusun judul, subjudul, dan tagline secara vertikal dengan rapi */
+    justify-content: center;
+}
+
+/* Memperbesar dan menyeimbangkan ukuran font tulisan instansi agar tidak bertumpuk */
+.brand-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.brand-subtitle {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #0369a1;
+    line-height: 1.2;
+}
+
+.brand-tagline {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #334155;
+    line-height: 1.2;
+}
+
+/* Efek animasi floating card pada keunggulan */
+.feature-card {
+    background: #ffffff;
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.img-sambutan {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.gallery-img {
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+/* Gaya kotak informasi layanan cepat (menggantikan statistik mati) */
+.info-box {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: white;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 15px -3px rgba(2, 132, 199, 0.3);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(2, 132, 199, 0.4);
+}
+
+.info-box::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.info-box:hover::before {
+    transform: scale(1.5);
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: #0284c7;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
