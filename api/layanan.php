@@ -31,7 +31,7 @@ include 'includes/header.php';
                             <div>
                                 <h4 class="card-title fw-bold">Bebas Pustaka</h4>
                                 <p class="card-text text-muted">Pengajuan surat keterangan bebas pustaka bagi mahasiswa tingkat akhir sebagai syarat kelulusan dan yudisium.</p>
-                                <a href="pages/bebas-pustaka" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Ajukan Bebas Pustaka</a>
+                                <a href="pages/bebas-pustaka.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Ajukan Bebas Pustaka</a>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ include 'includes/header.php';
                             <div>
                                 <h4 class="card-title fw-bold">Cek Plagiarisme</h4>
                                 <p class="card-text text-muted">Layanan pengecekan tingkat kemiripan (Turnitin) untuk naskah skripsi, jurnal, atau karya ilmiah mahasiswa dan dosen.</p>
-                                <a href="pages/cek-plagiarisme" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Ajukan Cek Plagiat</a>
+                                <a href="pages/cek-plagiarisme.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Ajukan Cek Plagiat</a>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ include 'includes/header.php';
                             <div>
                                 <h4 class="card-title fw-bold">Layanan Konsultasi</h4>
                                 <p class="card-text text-muted">Butuh bantuan atau panduan penelusuran referensi, sitasi, dan literatur ilmiah? Silakan ajukan konsultasi dengan pustakawan.</p>
-                                <a href="pages/layanan-konsultasi" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Mulai Konsultasi</a>
+                                <a href="pages/layanan-konsultasi.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Mulai Konsultasi</a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ include 'includes/header.php';
                             <div>
                                 <h4 class="card-title fw-bold">Survei Kepuasan Pelayanan</h4>
                                 <p class="card-text text-muted">Bantu kami meningkatkan kualitas layanan perpustakaan dengan mengisi survei kepuasan pengunjung secara berkala.</p>
-                                <a href="pages/cek-kepuasan" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Isi Survei</a>
+                                <a href="pages/cek-kepuasan.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Isi Survei</a>
                             </div>
                         </div>
                     </div>
@@ -96,7 +96,7 @@ include 'includes/header.php';
                             <div>
                                 <h4 class="card-title fw-bold">Sumbangan Buku</h4>
                                 <p class="card-text text-muted">Formulir pelaporan atau konfirmasi bagi mahasiswa/dosen/umum yang ingin menyumbangkan buku atau koleksi ke perpustakaan.</p>
-                                <a href="pages/cek-sumbangan-buku" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Konfirmasi Sumbangan</a>
+                                <a href="pages/cek-sumbangan-buku.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Konfirmasi Sumbangan</a>
                             </div>
                         </div>
                     </div>

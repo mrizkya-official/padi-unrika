@@ -6,7 +6,7 @@ include 'includes/header.php';
         <div class="container" data-aos="fade-down" data-aos-duration="1000">
             <h1 class="display-4 fw-bold mb-3">Perpustakaan Universitas Riau Kepulauan</h1>
             <p class="lead mb-4">Pusat Informasi dan Literasi Akademik Civitas Academica UNRIKA</p>
-            <a href="daftar-hadir.html" class="btn btn-primary btn-lg px-4 rounded-pill shadow-lg"><i class="fa-solid fa-qrcode me-2"></i> Scan Daftar Hadir</a>
+            <a href="daftar-hadir.php" class="btn btn-primary btn-lg px-4 rounded-pill shadow-lg"><i class="fa-solid fa-qrcode me-2"></i> Scan Daftar Hadir</a>
         </div>
     </header>
 
