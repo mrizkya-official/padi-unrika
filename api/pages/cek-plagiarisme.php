@@ -31,7 +31,7 @@
 <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top py-2">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="i../ndex.html">
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="../index.php">
                 <img src="../assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo">
                 <div class="brand-text-container">
                     <div class="brand-title">Perpustakaan</div>
@@ -44,12 +44,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../profil.html">Profil</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../layanan.html">Layanan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../daftar-hadir.html">Daftar Hadir</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../referensi.html">Referensi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../profil.php">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../layanan.php">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../daftar-hadir.php">Daftar Hadir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../referensi.php">Referensi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../kontak.php">Kontak</a></li>
                 </ul>
             </div>
         </div>
