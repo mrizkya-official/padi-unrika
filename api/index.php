@@ -63,7 +63,7 @@ include 'includes/header.php';
     <div class="container py-4">
         <div class="row g-4 justify-content-center">
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <a href="layanan.html" class="text-decoration-none">
+                <a href="layanan.php" class="text-decoration-none">
                     <div class="info-box h-100">
                         <div class="info-icon"><i class="fa-solid fa-file-circle-check"></i></div>
                         <h5 class="fw-bold text-white mb-2">Surat Bebas Pustaka</h5>
@@ -72,7 +72,7 @@ include 'includes/header.php';
                 </a>
             </div>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <a href="layanan.html" class="text-decoration-none">
+                <a href="layanan.php" class="text-decoration-none">
                     <div class="info-box h-100" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
                         <div class="info-icon" style="color: #059669;"><i class="fa-solid fa-shield-halved"></i></div>
                         <h5 class="fw-bold text-white mb-2">Cek Plagiarisme (Turnitin)</h5>
@@ -81,7 +81,7 @@ include 'includes/header.php';
                 </a>
             </div>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <a href="referensi.html" class="text-decoration-none">
+                <a href="referensi.php" class="text-decoration-none">
                     <div class="info-box h-100" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%);">
                         <div class="info-icon" style="color: #d97706;"><i class="fa-solid fa-book-open"></i></div>
                         <h5 class="fw-bold text-white mb-2">Butuh Referensi?</h5>
