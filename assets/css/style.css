@@ -186,3 +186,25 @@ body {
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
+.qr-container {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.qr-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.qr-img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
