@@ -47,14 +47,36 @@ body {
 /* (Tambahkan sisa kode CSS asli Anda di sini jika ada) */
 
 .hero-section {
-    /* Perhatikan bagian url('../img/unrika.png'), pastikan nama file gambarnya sesuai (background.png atau unrika.png) */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/bg-unrika.jpeg') no-repeat center center;
+    /* Menggunakan background-attachment: fixed untuk efek parallax yang halus */
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.8), rgba(2, 132, 199, 0.8)), 
+                url('../img/bg-unrika.jpeg') no-repeat center center;
     background-size: cover;
+    background-attachment: fixed; /* Gambar tidak ikut scroll secara kaku, memberi kesan mendalam */
+    
     color: white;
-    padding: 180px 0; 
-    min-height: 600px;
+    padding: 120px 0; /* Dikurangi sedikit agar lebih proporsional */
+    min-height: 500px; /* Disesuaikan agar lebih enak dilihat di berbagai layar */
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Opsional: Tambahkan animasi masuk untuk teks di dalam hero agar lebih dinamis */
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .navbar-brand {
