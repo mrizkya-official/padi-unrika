@@ -46,38 +46,41 @@ body {
 
 /* (Tambahkan sisa kode CSS asli Anda di sini jika ada) */
 
-hero-section {
-    /* Menggunakan gradien yang lebih transparan dan memberikan kontras hanya pada bagian tengah */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
-                url('../img/bg-unrika.jpeg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    
-    color: white;
+.hero-section {
+    position: relative;
     padding: 140px 0;
     min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
+    
+    /* Gunakan ini untuk memastikan gambar terpanggil dengan benar */
+    background-image: url('../img/bg-unrika.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Kita buat overlay sebagai layer terpisah agar gambar tidak tertutup penuh */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gunakan warna hitam dengan transparansi tipis saja agar tidak biru dan tidak hilang */
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+}
+
+/* Memastikan konten teks berada di atas overlay */
+.hero-section .container {
     position: relative;
-    /* Memberikan efek blur sedikit jika ingin gambar terlihat lebih estetik/dreamy */
-    /* filter: brightness(0.9); */ 
-}
-
-/* Opsional: Tambahkan animasi masuk untuk teks di dalam hero agar lebih dinamis */
-.hero-section h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.hero-section p {
-    font-size: 1.25rem;
-    opacity: 0.9;
-    max-width: 700px;
-    margin: 0 auto;
+    z-index: 2;
 }
 
 .navbar-brand {
