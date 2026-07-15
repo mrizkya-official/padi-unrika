@@ -46,22 +46,23 @@ body {
 
 /* (Tambahkan sisa kode CSS asli Anda di sini jika ada) */
 
-.hero-section {
-    /* Menggunakan background-attachment: fixed untuk efek parallax yang halus */
-    background: linear-gradient(135deg, rgba(13, 110, 253, 0.8), rgba(2, 132, 199, 0.8)), 
+hero-section {
+    /* Menggunakan gradien yang lebih transparan dan memberikan kontras hanya pada bagian tengah */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
                 url('../img/bg-unrika.jpeg') no-repeat center center;
     background-size: cover;
-    background-attachment: fixed; /* Gambar tidak ikut scroll secara kaku, memberi kesan mendalam */
+    background-attachment: fixed;
     
     color: white;
-    padding: 120px 0; /* Dikurangi sedikit agar lebih proporsional */
-    min-height: 500px; /* Disesuaikan agar lebih enak dilihat di berbagai layar */
+    padding: 140px 0;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    /* Memberikan efek blur sedikit jika ingin gambar terlihat lebih estetik/dreamy */
+    /* filter: brightness(0.9); */ 
 }
 
 /* Opsional: Tambahkan animasi masuk untuk teks di dalam hero agar lebih dinamis */
