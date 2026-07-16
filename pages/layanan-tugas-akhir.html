@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Tugas Akhir - Perpustakaan UNRIKA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .alur-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 5px solid #fff;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+        .card-download {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 5px solid #0d6efd;
+        }
+        .card-download:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+        }
+        .qr-img {
+            max-width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html">
+                <img src="assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo" style="width: 50px; margin-right: 15px;">
+                <div class="brand-text-container">
+                    <div class="brand-title fw-bold" style="font-size: 1.2rem;">Perpustakaan</div>
+                    <div class="brand-subtitle" style="font-size: 0.9rem;">Universitas Riau Kepulauan</div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">BERANDA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil.html">PROFIL</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="layanan.html">LAYANAN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="referensi.html">REFERENSI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">KONTAK</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold">Layanan Tugas Akhir</h1>
+            <p class="lead mb-0">Panduan unggah mandiri skripsi, jurnal, dan tesis ke repositori perpustakaan UNRIKA</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <!-- Ketentuan -->
+                <div class="col-lg-10 mb-2">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 bg-light border-start border-primary border-5">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary fw-bold mb-3"><i class="fa-solid fa-file-lines me-2"></i> Ketentuan Tugas Akhir</h3>
+                            <p class="card-text text-secondary" style="line-height: 1.7;">
+                                Layanan ini mencakup pengelolaan naskah akademik (Skripsi, Jurnal, Tesis) yang akan diunggah ke repositori digital Perpustakaan UNRIKA. Mahasiswa wajib memastikan dokumen telah sesuai dengan format, bebas plagiarisme, dan telah disetujui oleh dosen pembimbing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Akses Unggah -->
+                <div class="col-lg-10 mb-4">
+                    <div class="card card-download h-100 border-0 shadow-sm p-4 rounded-4 text-center">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold text-dark mb-3">Unggah Tugas Akhir (Jurnal/Skripsi/Tesis)</h4>
+                            <p class="card-text text-muted mb-4">Akses platform unggah mandiri melalui QR Code di bawah ini:</p>
+                            <div class="qr-container mb-3">
+                                <img src="../assets/img/qr-formulir-tugas akhir.png" alt="QR Layanan Tugas Akhir" class="qr-img">
+                            </div>
+                            <div class="mt-2">
+                                <p class="small text-muted">Arahkan kamera ponsel Anda ke QR di atas</p>
+                            </div>
+                            <div class="alert alert-primary py-3 px-3 small rounded-3 mt-3" role="alert">
+                                <i class="fa-solid fa-link me-2"></i> Atau akses melalui tautan berikut:<br>
+                                <a href="https://drive.google.com/drive/folders/1kT4SJBwu6ii7k1RNeT6wWou1O6gpqvKb" target="_blank" class="text-decoration-none fw-bold d-block mt-1 text-break">
+                                    https://acesse.one/x4sw8h4
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4 text-center mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Perpustakaan Universitas Riau Kepulauan (UNRIKA). All Rights Reserved.</p>
+            <p class="mb-0 small text-white mt-1">Developed by <strong>M Rizky Apryansyah</strong></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
