@@ -39,11 +39,12 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top py-2">
-    <!-- Tambahkan class 'justify-content-between' untuk memastikan logo di kiri dan menu di kanan -->
-    <div class="container d-flex justify-content-between align-items-center">
+    <!-- Ubah 'container' menjadi 'container-fluid' agar melebar ke tepi layar -->
+    <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
         
         <!-- Bagian Logo (Kiri) -->
-        <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html">
+        <!-- Menambahkan sedikit margin-left jika masih dirasa kurang ke kiri -->
+        <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html" style="margin-left: -10px;">
             <img src="assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo">
             <div class="brand-text-container">
                 <div class="brand-title">Perpustakaan</div>
@@ -58,7 +59,6 @@
 
         <!-- Bagian Menu (Kanan) -->
         <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- 'ms-auto' di sini akan mendorong seluruh isi ul ke sisi kanan -->
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link text-white" href="index.html">BERANDA</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="profil.html">PROFIL</a></li>
