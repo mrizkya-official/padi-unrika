@@ -1,116 +1,85 @@
-/* style.css - Elegant Gold & White Theme */
+/* style.css - Luxury Gold & Orange Dark Theme */
 :root {
-    /* Palet Warna Baru: Emas, Putih, Oranye */
-    --gold: #D4AF37;       /* Emas utama */
-    --orange: #FF8C00;      /* Oranye aksen */
-    --white: #FFFFFF;
-    --bg-light: #F8F9FA;    /* Background putih bersih */
-    --text-dark: #212529;   /* Teks gelap untuk keterbacaan */
-    --accent: var(--gold);  /* Mengganti cyan dengan emas */
+    --gold: #D4AF37;       /* Emas */
+    --orange: #FF8C00;     /* Oranye */
+    --dark-bg: #0a0a0a;    /* Hitam pekat (Luxury feel) */
+    --card-bg: #171717;    /* Hitam sedikit lebih terang untuk kartu */
+    --text-white: #ffffff;
 }
 
 body {
-    background-color: var(--bg-light);
-    color: var(--text-dark);
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif;
 }
 
-/* Navbar Minimalis - Putih & Emas */
+/* Navbar dengan border bawah emas */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px);
+    background-color: rgba(10, 10, 10, 0.95) !important;
     border-bottom: 2px solid var(--gold);
 }
 
 .navbar .nav-link {
-    color: var(--text-dark) !important;
+    color: var(--text-white) !important;
     font-weight: 500;
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
+.navbar .nav-link:hover {
     color: var(--orange) !important;
 }
 
-/* Hero Section - Menggunakan gradasi emas lembut */
-.hero-wrapper {
-    background: linear-gradient(135deg, var(--white) 0%, #FFF8E1 100%);
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 0.9; /* Sedikit transparan agar terlihat elegan */
-}
-
+/* Hero Section: Overlay Hitam dengan Border Emas */
 .hero-content {
-    position: absolute;
-    width: 100%;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.7); /* Overlay putih semi-transparan */
+    background: rgba(0, 0, 0, 0.6); /* Transparan agar gambar tetap kelihatan */
+    border-left: 5px solid var(--gold);
+    padding: 40px;
 }
 
-.hero-content h1, .hero-content p {
-    color: var(--text-dark) !important;
+h1, h2 {
+    color: var(--gold) !important; /* Judul berwarna emas agar menonjol */
 }
 
-/* Kartu Minimalis - Putih dengan border Emas */
+/* Kartu dengan aksen Oranye-Emas */
 .feature-card {
-    background: var(--white);
-    border: 1px solid #E0E0E0;
-    border-radius: 12px;
+    background: var(--card-bg);
+    border: 1px solid #333;
+    border-radius: 0; /* Memberi kesan modern/tegas */
     transition: 0.3s;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 .feature-card:hover {
-    border-color: var(--gold);
+    border-top: 3px solid var(--orange);
     transform: translateY(-5px);
 }
 
-/* Info Box - Elegan dengan sentuhan Emas */
+/* Info Box - Fokus ke Oranye/Emas */
 .info-box {
-    padding: 30px;
-    border-radius: 15px;
-    background: var(--white);
-    color: var(--text-dark);
-    transition: transform 0.3s ease;
+    background: linear-gradient(145deg, #171717, #0a0a0a);
     border: 1px solid var(--gold);
-}
-
-.info-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+    color: var(--text-white);
 }
 
 .info-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: var(--gold); 
+    color: var(--orange); /* Ikon warna oranye agar kontras */
 }
 
-/* Footer - Gelap mewah atau Putih bersih */
+/* Tombol Oranye menyala */
+.btn-primary {
+    background-color: var(--orange) !important;
+    border: 2px solid var(--gold) !important;
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    background-color: var(--gold) !important;
+    border-color: var(--orange) !important;
+}
+
+/* Footer Hitam pekat dengan garis Emas */
 .footer {
-    background-color: var(--text-dark);
-    color: var(--white);
-    border-top: 3px solid var(--gold);
-}
-
-/* Tipografi & Tombol */
-.text-primary { color: var(--gold) !important; }
-.btn-primary { 
-    background-color: var(--gold) !important; 
-    border: none !important; 
-    color: #FFFFFF !important; 
-    font-weight: 600; 
-}
-.btn-primary:hover { 
-    background-color: var(--orange) !important; 
+    background-color: #000;
+    border-top: 4px solid var(--gold);
+    color: var(--text-white);
 }
