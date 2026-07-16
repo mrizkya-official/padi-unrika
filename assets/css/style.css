@@ -1,85 +1,107 @@
-/* style.css - Luxury Gold & Orange Dark Theme */
+/* style.css - Minimalist Dark Theme */
 :root {
-    --gold: #D4AF37;       /* Emas */
-    --orange: #FF8C00;     /* Oranye */
-    --dark-bg: #0a0a0a;    /* Hitam pekat (Luxury feel) */
-    --card-bg: #171717;    /* Hitam sedikit lebih terang untuk kartu */
-    --text-white: #ffffff;
+    --bg-dark: #0f172a;
+    --card-dark: #1e293b;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+    --accent: #38bdf8; /* Cyan/Light Blue sebagai aksen */
 }
 
 body {
-    background-color: var(--dark-bg);
-    color: var(--text-white);
-    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-/* Navbar dengan border bawah emas */
+/* Navbar Minimalis */
 .navbar {
-    background-color: rgba(10, 10, 10, 0.95) !important;
-    border-bottom: 2px solid var(--gold);
+    background-color: rgba(15, 23, 42, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #334155;
 }
 
-.navbar .nav-link {
-    color: var(--text-white) !important;
-    font-weight: 500;
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-muted);
+    font-weight: 400;
 }
 
-.navbar .nav-link:hover {
-    color: var(--orange) !important;
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--accent);
 }
 
-/* Hero Section: Overlay Hitam dengan Border Emas */
-.hero-content {
-    background: rgba(0, 0, 0, 0.6); /* Transparan agar gambar tetap kelihatan */
-    border-left: 5px solid var(--gold);
-    padding: 40px;
+/* Hero Section */
+.hero-section {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.3)), url('../img/bg-unrika.jpeg');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 250px 0;
 }
 
-h1, h2 {
-    color: var(--gold) !important; /* Judul berwarna emas agar menonjol */
-}
-
-/* Kartu dengan aksen Oranye-Emas */
+/* Kartu Minimalis */
 .feature-card {
-    background: var(--card-bg);
-    border: 1px solid #333;
-    border-radius: 0; /* Memberi kesan modern/tegas */
+    background: var(--card-dark);
+    border: 1px solid #334155;
+    border-radius: 12px;
     transition: 0.3s;
 }
 
 .feature-card:hover {
-    border-top: 3px solid var(--orange);
+    border-color: var(--accent);
     transform: translateY(-5px);
 }
 
-/* Info Box - Fokus ke Oranye/Emas */
+/* Info Box */
+/* Tambahkan ini ke dalam tag <style> Anda */
 .info-box {
-    background: linear-gradient(145deg, #171717, #0a0a0a);
-    border: 1px solid var(--gold);
-    color: var(--text-white);
+    padding: 30px;
+    border-radius: 15px;
+    background: #343a40; /* Warna latar belakang gelap untuk box */
+    color: #fff;
+    transition: transform 0.3s ease;
+    border: 1px solid #495057;
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
 }
 
 .info-icon {
-    color: var(--orange); /* Ikon warna oranye agar kontras */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0d6efd; /* Warna ikon default */
 }
 
-/* Tombol Oranye menyala */
-.btn-primary {
-    background-color: var(--orange) !important;
-    border: 2px solid var(--gold) !important;
-    color: white !important;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.btn-primary:hover {
-    background-color: var(--gold) !important;
-    border-color: var(--orange) !important;
-}
-
-/* Footer Hitam pekat dengan garis Emas */
+/* Footer */
 .footer {
-    background-color: #000;
-    border-top: 4px solid var(--gold);
-    color: var(--text-white);
+    background-color: #020617;
+    border-top: 1px solid #334155;
+}
+
+/* Tipografi */
+.text-muted { color: var(--text-muted) !important; }
+.text-primary { color: var(--accent) !important; }
+.btn-primary { background-color: var(--accent); border: none; color: #000; font-weight: 600; }
+
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 100%;       /* Gambar akan memenuhi lebar layar */
+    height: auto;      /* Gambar otomatis menyesuaikan tinggi agar utuh */
+    display: block;
+}
+
+.hero-content {
+    position: absolute; /* Membuat teks melayang di atas gambar */
+    width: 100%;
+    padding: 20px;
+    background: rgba(15, 23, 42, 0.5); /* Overlay gelap agar teks terbaca */
 }
