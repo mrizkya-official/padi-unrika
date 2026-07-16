@@ -9,13 +9,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        /* Perbaikan ukuran logo agar tidak terlalu besar */
+        /* CSS tambahan untuk menjaga ukuran logo dan kontras teks */
         .navbar-logo { height: 40px; width: auto; margin-right: 15px; }
         .brand-title { font-weight: bold; font-size: 1.1rem; color: #fff; }
-        .brand-subtitle { font-size: 0.75rem !important; color: #ccc; }
+        .brand-subtitle, .brand-tagline { font-size: 0.75rem !important; color: #ccc; }
+        body { background-color: #212529 !important; color: #f8f9fa !important; }
     </style>
 </head>
-<body class="bg-dark text-light">
+<body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top py-2">
         <div class="container">
@@ -24,6 +25,7 @@
                 <div class="brand-text-container">
                     <div class="brand-title">Perpustakaan</div>
                     <div class="brand-subtitle">Universitas Riau Kepulauan</div>
+                    <div class="brand-tagline">Koleksi & Layanan Digital</div>
                 </div>
             </a>   
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -31,43 +33,100 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">BERANDA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="profil.html">PROFIL</a></li>
-                    <li class="nav-item"><a class="nav-link" href="layanan.html">LAYANAN</a></li>
-                    <li class="nav-item"><a class="nav-link" href="daftar-hadir.html">DAFTAR HADIR</a></li>
-                    <li class="nav-item"><a class="nav-link" href="referensi.html">REFERENSI</a></li>
-                    <li class="nav-item"><a class="nav-link" href="kebijakan.html">KEBIJAKAN</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pedoman.html">PEDOMAN AKADEMIK</a></li>
-                    <li class="nav-item"><a class="nav-link" href="kontak.html">KONTAK</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">BERANDA</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="profil.html">PROFIL</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="layanan.html">LAYANAN</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="daftar-hadir.html">DAFTAR HADIR</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="referensi.html">REFERENSI</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="kebijakan.html">KEBIJAKAN</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="pedoman.html">PEDOMAN AKADEMIK</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="kontak.html">KONTAK</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section tetap sama -->
     <header class="hero-section text-center py-5">
         <div class="container" data-aos="fade-down" data-aos-duration="1000">
             <h1 class="display-4 fw-bold mb-3 text-white">Perpustakaan Universitas Riau Kepulauan</h1>
-            <a href="daftar-hadir.html" class="btn btn-primary btn-lg rounded-pill shadow-lg"><i class="fa-solid fa-qrcode me-2"></i> Scan Daftar Hadir</a>
+            <p class="lead mb-4 text-white-50">Pusat Informasi dan Literasi Akademik Civitas Academica UNRIKA</p>
+            <a href="daftar-hadir.html" class="btn btn-primary btn-lg px-4 rounded-pill shadow-lg"><i class="fa-solid fa-qrcode me-2"></i> Scan Daftar Hadir</a>
         </div>
     </header>
 
-    <!-- Bagian Layanan Lengkap -->
+    <section class="py-5 overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="mb-3 fw-bold text-primary">Sambutan Pimpinan Perpustakaan</h2>
+                    <p class="text-white-50 lh-lg">Perpustakaan Digital UNRIKA hadir sebagai pusat informasi modern untuk mendukung Tri Dharma Perguruan Tinggi. Di era transformasi digital ini, kami berkomitmen menyediakan akses informasi yang cepat, mudah, dan inklusif bagi seluruh sivitas akademika.
+                    Melalui platform ini, Anda dapat mengakses berbagai koleksi ilmiah seperti e-book, e-journal, hingga repositori institusi secara fleksibel. Kami berharap layanan ini dapat memperkuat budaya literasi, meningkatkan kualitas penelitian, serta mendorong inovasi yang bermanfaat bagi masyarakat.
+                    Pengembangan sistem digital ini merupakan langkah strategis UNRIKA dalam mewujudkan tata kelola yang adaptif, efektif, dan berdaya saing.</p>
+                    <p class="text-white fw-bold">Ramayandi Mulda, S.IP.,M.IP. (Kepala Perpustakaan)</p>
+                </div>
+                <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="1200">
+                    <img src="assets/img/kapus2.jpeg" alt="Kepala Perpustakaan" class="img-fluid img-sambutan rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Layanan (bg-light diubah menjadi bg-dark) -->
+    <section class="bg-dark py-5 border-top border-secondary">
+        <div class="container py-4">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold text-white">Layanan Perpustakaan Digital UNRIKA</h2>
+                <p class="text-white-50">Kemudahan literasi dalam satu genggaman untuk mendukung kesuksesan akademik Anda.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="feature-card p-4 text-center h-100 border border-secondary bg-dark">
+                        <div class="fs-1 text-primary mb-3"><i class="fa-solid fa-book-bookmark"></i></div>
+                        <h5 class="fw-bold mb-2 text-white">Koleksi Referensi Lengkap</h5>
+                        <p class="text-white-50 small mb-0">Akses ribuan literatur, jurnal nasional dan internasional, serta repositori karya ilmiah secara mudah.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="feature-card p-4 text-center h-100 border border-secondary bg-dark">
+                        <div class="fs-1 text-success mb-3"><i class="fa-solid fa-bolt"></i></div>
+                        <h5 class="fw-bold mb-2 text-white">Layanan Digital Cepat</h5>
+                        <p class="text-white-50 small mb-0">Pengajuan surat bebas pustaka dan pengecekan plagiarisme yang terintegrasi secara daring (*online*).</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="feature-card p-4 text-center h-100 border border-secondary bg-dark">
+                        <div class="fs-1 text-info mb-3"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h5 class="fw-bold mb-2 text-white">Daftar Pengunjung Perpustakaan</h5>
+                        <p class="text-white-50 small mb-0">Sistem daftar hadir pengunjung yang praktis menggunakan pemindaian QR Code (*scan*).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Info Box (Tetap dipertahankan) -->
     <section class="py-5">
         <div class="container py-4">
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="zoom-in"><div class="feature-card p-4 text-center h-100 bg-dark border border-secondary"><div class="fs-1 text-primary mb-3"><i class="fa-solid fa-book-bookmark"></i></div><h5 class="fw-bold text-white">Koleksi Referensi</h5><p class="text-secondary small">Akses ribuan literatur dan jurnal ilmiah.</p></div></div>
-                <div class="col-md-4" data-aos="zoom-in"><div class="feature-card p-4 text-center h-100 bg-dark border border-secondary"><div class="fs-1 text-success mb-3"><i class="fa-solid fa-bolt"></i></div><h5 class="fw-bold text-white">Layanan Digital</h5><p class="text-secondary small">Surat bebas pustaka & cek plagiarisme online.</p></div></div>
-                <div class="col-md-4" data-aos="zoom-in"><div class="feature-card p-4 text-center h-100 bg-dark border border-secondary"><div class="fs-1 text-info mb-3"><i class="fa-solid fa-laptop-code"></i></div><h5 class="fw-bold text-white">Daftar Pengunjung</h5><p class="text-secondary small">Scan QR Code kehadiran secara praktis.</p></div></div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="layanan.html" class="text-decoration-none">
+                        <div class="info-box h-100 bg-secondary">
+                            <div class="info-icon text-white"><i class="fa-solid fa-file-circle-check"></i></div>
+                            <h5 class="fw-bold text-white mb-2">Surat Bebas Pustaka</h5>
+                            <p class="small mb-0 text-white">Ajukan persyaratan bebas pustaka secara online untuk keperluan yudisium dan wisuda Anda.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Tambahkan sisa kolom info-box lainnya dengan cara serupa -->
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-4 text-center border-top border-secondary">
+    <footer class="bg-dark text-light py-4 text-center mt-auto border-top border-secondary">
         <div class="container">
-            <p class="mb-0">&copy; 2026 Perpustakaan Universitas Riau Kepulauan (UNRIKA).</p>
-            <p class="small text-secondary mt-1">Developed by <strong>M Rizky Apryansyah</strong></p>
+            <p class="mb-0">&copy; 2026 Perpustakaan Universitas Riau Kepulauan (UNRIKA). All Rights Reserved.</p>
+            <p class="mb-0 small text-white mt-1">Developed with <i class="fa-solid fa-heart text-danger"></i> by <strong>M Rizky Apryansyah</strong></p>
         </div>
     </footer>
 
