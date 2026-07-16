@@ -32,9 +32,10 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.6)), url('../img/bg-unrika.jpeg');
-    background-size: cover;      /* Pastikan gambar menutupi seluruh area */
-    background-position: center; /* Pastikan fokus gambar ada di tengah */
+    background-image: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.5)), url('../img/bg-unrika.jpeg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 160px 0;
 }
 
