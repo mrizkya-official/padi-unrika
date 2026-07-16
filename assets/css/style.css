@@ -83,3 +83,25 @@ body {
 .text-muted { color: var(--text-muted) !important; }
 .text-primary { color: var(--accent) !important; }
 .btn-primary { background-color: var(--accent); border: none; color: #000; font-weight: 600; }
+
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 100%;       /* Gambar akan memenuhi lebar layar */
+    height: auto;      /* Gambar otomatis menyesuaikan tinggi agar utuh */
+    display: block;
+}
+
+.hero-content {
+    position: absolute; /* Membuat teks melayang di atas gambar */
+    width: 100%;
+    padding: 20px;
+    background: rgba(15, 23, 42, 0.5); /* Overlay gelap agar teks terbaca */
+}
