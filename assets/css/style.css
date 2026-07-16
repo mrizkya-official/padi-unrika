@@ -1,91 +1,40 @@
-/* style.css - Minimalist Dark Theme */
+/* style.css - Elegant Gold & White Theme */
 :root {
+    /* Palet Warna Baru: Emas, Putih, Oranye */
     --gold: #D4AF37;       /* Emas utama */
-    --light-gold: #F3E5AB;  /* Aksen emas muda */
-    --orange: #FF8C00;      /* Oranye cerah untuk aksen */
+    --orange: #FF8C00;      /* Oranye aksen */
     --white: #FFFFFF;
-    --soft-white: #F8F9FA;  /* Putih bersih untuk background */
-    --dark-text: #212529;   /* Abu-abu gelap untuk keterbacaan teks */
+    --bg-light: #F8F9FA;    /* Background putih bersih */
+    --text-dark: #212529;   /* Teks gelap untuk keterbacaan */
+    --accent: var(--gold);  /* Mengganti cyan dengan emas */
 }
 
 body {
-    background-color: var(--bg-dark);
-    color: var(--text-main);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-/* Navbar Minimalis */
+/* Navbar Minimalis - Putih & Emas */
 .navbar {
-    background-color: rgba(15, 23, 42, 0.9) !important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid #334155;
+    border-bottom: 2px solid var(--gold);
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: var(--text-muted);
-    font-weight: 400;
+.navbar .nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--accent);
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--orange) !important;
 }
 
-/* Hero Section */
-.hero-section {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.3)), url('../img/bg-unrika.jpeg');
-    background-size: contain; 
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 250px 0;
-}
-
-/* Kartu Minimalis */
-.feature-card {
-    background: var(--card-dark);
-    border: 1px solid #334155;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.feature-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-5px);
-}
-
-/* Info Box */
-/* Tambahkan ini ke dalam tag <style> Anda */
-.info-box {
-    padding: 30px;
-    border-radius: 15px;
-    background: #343a40; /* Warna latar belakang gelap untuk box */
-    color: #fff;
-    transition: transform 0.3s ease;
-    border: 1px solid #495057;
-}
-
-.info-box:hover {
-    transform: translateY(-10px);
-}
-
-.info-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #0d6efd; /* Warna ikon default */
-}
-
-/* Footer */
-.footer {
-    background-color: #020617;
-    border-top: 1px solid #334155;
-}
-
-/* Tipografi */
-.text-muted { color: var(--text-muted) !important; }
-.text-primary { color: var(--accent) !important; }
-.btn-primary { background-color: var(--accent); border: none; color: #000; font-weight: 600; }
-
+/* Hero Section - Menggunakan gradasi emas lembut */
 .hero-wrapper {
+    background: linear-gradient(135deg, var(--white) 0%, #FFF8E1 100%);
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -95,14 +44,73 @@ body {
 }
 
 .hero-img {
-    width: 100%;       /* Gambar akan memenuhi lebar layar */
-    height: auto;      /* Gambar otomatis menyesuaikan tinggi agar utuh */
+    width: 100%;
+    height: auto;
     display: block;
+    opacity: 0.9; /* Sedikit transparan agar terlihat elegan */
 }
 
 .hero-content {
-    position: absolute; /* Membuat teks melayang di atas gambar */
+    position: absolute;
     width: 100%;
     padding: 20px;
-    background: rgba(15, 23, 42, 0.5); /* Overlay gelap agar teks terbaca */
+    background: rgba(255, 255, 255, 0.7); /* Overlay putih semi-transparan */
+}
+
+.hero-content h1, .hero-content p {
+    color: var(--text-dark) !important;
+}
+
+/* Kartu Minimalis - Putih dengan border Emas */
+.feature-card {
+    background: var(--white);
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
+}
+
+/* Info Box - Elegan dengan sentuhan Emas */
+.info-box {
+    padding: 30px;
+    border-radius: 15px;
+    background: var(--white);
+    color: var(--text-dark);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--gold);
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+
+.info-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--gold); 
+}
+
+/* Footer - Gelap mewah atau Putih bersih */
+.footer {
+    background-color: var(--text-dark);
+    color: var(--white);
+    border-top: 3px solid var(--gold);
+}
+
+/* Tipografi & Tombol */
+.text-primary { color: var(--gold) !important; }
+.btn-primary { 
+    background-color: var(--gold) !important; 
+    border: none !important; 
+    color: #FFFFFF !important; 
+    font-weight: 600; 
+}
+.btn-primary:hover { 
+    background-color: var(--orange) !important; 
 }
