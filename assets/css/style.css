@@ -1,10 +1,11 @@
 /* style.css - Minimalist Dark Theme */
 :root {
-    --bg-dark: #0f172a;
-    --card-dark: #1e293b;
-    --text-main: #f1f5f9;
-    --text-muted: #94a3b8;
-    --accent: #38bdf8; /* Cyan/Light Blue sebagai aksen */
+    --gold: #D4AF37;       /* Emas utama */
+    --light-gold: #F3E5AB;  /* Aksen emas muda */
+    --orange: #FF8C00;      /* Oranye cerah untuk aksen */
+    --white: #FFFFFF;
+    --soft-white: #F8F9FA;  /* Putih bersih untuk background */
+    --dark-text: #212529;   /* Abu-abu gelap untuk keterbacaan teks */
 }
 
 body {
