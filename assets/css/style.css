@@ -32,11 +32,11 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.5)), url('../img/bg-unrika.jpeg');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.3)), url('../img/bg-unrika.jpeg');
     background-size: contain; 
-    background-repeat: no-repeat;
     background-position: center;
-    padding: 160px 0;
+    background-repeat: no-repeat;
+    padding: 250px 0;
 }
 
 /* Kartu Minimalis */
