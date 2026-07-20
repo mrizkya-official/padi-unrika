@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedoman Akademik - Perpustakaan Universitas Riau Kepulauan (UNRIKA)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* TEMA DARK LUXURY OVERRIDE */
+        body { 
+            background-color: #0a0a0a !important; 
+            color: #ffffff !important; 
+        }
+        
+        /* Navbar Dark */
+        .navbar { 
+            background-color: rgba(15, 23, 42, 0.9) !important; 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #334155 !important; 
+        }
+        .navbar .nav-link { color: #94a3b8 !important; }
+        .navbar .nav-link:hover, .navbar .nav-link.active { color: #38bdf8 !important; }
+        .brand-title, .brand-subtitle, .brand-tagline { color: #ffffff !important; }
+
+        /* Dropdown Menu Dark */
+        .dropdown-menu {
+            background-color: #1e293b !important;
+            border: 1px solid #334155 !important;
+        }
+        .dropdown-item {
+            color: #94a3b8 !important;
+        }
+        .dropdown-item:hover {
+            background-color: #0f172a !important;
+            color: #38bdf8 !important;
+        }
+
+        /* Header */
+        header.bg-primary { 
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a) !important; 
+            border-bottom: 2px solid #D4AF37;
+        }
+
+        /* Card & Section */
+        .card { 
+            background-color: #1e293b !important; 
+            border: 1px solid #334155 !important; 
+        }
+        
+        h1, h2, h3, h4, h5 { color: #ffffff !important; }
+        .text-primary { color: #38bdf8 !important; }
+        .text-secondary, .text-muted { color: #94a3b8 !important; }
+        .text-dark { color: #ffffff !important; }
+        
+        /* Spesifik Elemen */
+        .bg-light { background-color: #121212 !important; }
+        .bg-white { background-color: #1e293b !important; }
+        .card-body p, .card-body li { color: #f1f5f9 !important; }
+
+        .card-guideline {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 5px solid #38bdf8 !important;
+        }
+        .card-guideline:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,0.5) !important;
+            border-color: #38bdf8 !important;
+        }
+
+        .icon-box {
+            font-size: 2.5rem;
+            color: #38bdf8;
+        }
+
+        /* Footer */
+        footer.bg-dark { 
+            background-color: #020617 !important;
+            border-top: 1px solid #334155 !important; 
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html" style="padding-left: 0;">
+                <img src="assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo" style="height: 40px; margin-right: 10px;">
+                <div class="brand-text-container">
+                    <div class="brand-title fw-bold" style="font-size: 0.95rem;">Perpustakaan</div>
+                    <div class="brand-title" style="font-size: 0.8rem;">Universitas Riau Kepulauan</div>
+                </div>
+            </a>       
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">BERANDA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil.html">PROFIL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="layanan.html">LAYANAN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="referensi.html">REFERENSI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prosiding.html">PROSIDING</a></li>
+                    <li class="nav-item"><a class="nav-link" href="repositori.html">REPOSITORI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kebijakan.html">KEBIJAKAN</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pedoman.html">PEDOMAN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">KONTAK</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <header class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold">Pedoman Akademik Perpustakaan</h1>
+            <p class="lead mb-0 text-muted">Panduan tata tertib, peminjaman, literasi, serta prosedur administrasi layanan perpustakaan UNRIKA</p>
+        </div>
+    </header>
+
+    <section class="py-5 flex-grow-1 bg-light">
+        <div class="container">
+            <!-- Pengantar Pedoman -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 bg-light border-start border-primary border-5">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary fw-bold mb-3"><i class="fa-solid fa-book-open-reader me-2"></i> Panduan Umum Layanan</h3>
+                            <p class="card-text text-secondary mb-0" style="line-height: 1.7;">
+                                Pedoman akademik ini disusun untuk memberikan panduan komprehensif bagi civitas akademika Universitas Riau Kepulauan dalam memanfaatkan fasilitas, koleksi digital, serta memenuhi kewajiban administratif perpustakaan demi kelancaran kegiatan belajar mengajar dan penyelesaian studi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Poin Pedoman -->
+            <div class="row g-4 justify-content-center">
+                <!-- Poin 1: Tata Tertib -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="card card-guideline border-0 shadow-sm p-4 rounded-4 h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fa-solid fa-user-check icon-box"></i>
+                            </div>
+                            <h4 class="card-title fw-bold text-dark mb-3">Tata Tertib Pengunjung</h4>
+                            <ul class="text-secondary ps-3 mb-0" style="line-height: 1.7;">
+                                <li class="mb-2">Wajib melakukan pemindaian kehadiran (scan barcode) pada sistem daftar hadir perpustakaan.</li>
+                                <li class="mb-2">Menjaga ketenangan, ketertiban, dan kebersihan ruang baca perpustakaan.</li>
+                                <li>Berpakaian rapi dan sopan sesuai dengan ketentuan standar akademik universitas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poin 2: Layanan & Peminjaman -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="card card-guideline border-0 shadow-sm p-4 rounded-4 h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fa-solid fa-laptop-code icon-box"></i>
+                            </div>
+                            <h4 class="card-title fw-bold text-dark mb-3">Akses Digital & Referensi</h4>
+                            <ul class="text-secondary ps-3 mb-0" style="line-height: 1.7;">
+                                <li class="mb-2">Memanfaatkan portal e-book, repositori institusi, dan langganan jurnal ilmiah elektronik secara mandiri.</li>
+                                <li class="mb-2">Layanan pemeriksaan kemiripan karya ilmiah (Turnitin) dikoordinasikan langsung melalui UPT Perpustakaan.</li>
+                                <li>Menjunjung tinggi etika akademik dan menghindari plagiarisme dalam pemanfaatan referensi.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poin 3: Administrasi Kelulusan -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="card card-guideline border-0 shadow-sm p-4 rounded-4 h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fa-solid fa-file-invoice-dollar icon-box"></i>
+                            </div>
+                            <h4 class="card-title fw-bold text-dark mb-3">Kontribusi & Bebas Pustaka</h4>
+                            <ul class="text-secondary ps-3 mb-0" style="line-height: 1.7;">
+                                <li class="mb-2">Mahasiswa tingkat akhir wajib memenuhi kontribusi pengembangan perpustakaan digital sesuai SK Rektor.</li>
+                                <li class="mb-2">Besaran kontribusi: Program Sarjana (S1) sebesar Rp300.000,- dan Program Magister (S2) sebesar Rp400.000,-[cite: 2].</li>
+                                <li>Bukti pembayaran dan penyelesaian administrasi menjadi syarat mutlak penerbitan Surat Keterangan Bebas Pustaka serta pendaftaran wisuda[cite: 2].</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poin 4: Jam Operasional -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="card card-guideline border-0 shadow-sm p-4 rounded-4 h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fa-solid fa-clock icon-box"></i>
+                            </div>
+                            <h4 class="card-title fw-bold text-dark mb-3">Jam Layanan Operasional</h4>
+                            <ul class="text-secondary ps-3 mb-0" style="line-height: 1.7;">
+                                <li class="mb-2"><strong>Senin - Kamis:</strong> 08.00 - 16.00 WIB (Istirahat: 12.00 - 13.00 WIB)</li>
+                                <li class="mb-2"><strong>Jumat:</strong> 08.00 - 16.30 WIB (Istirahat: 11.30 - 13.30 WIB)</li>
+                                <li><strong>Sabtu - Minggu / Hari Libur Nasional:</strong> Tutup.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4 text-center mt-auto">
+        <div class="container">
+            <p class="mb-0 text-muted">&copy; 2026 Perpustakaan Universitas Riau Kepulauan (UNRIKA). All Rights Reserved.</p>
+            <p class="mb-0 small text-white mt-1">Developed with <i class="fa-solid fa-heart text-danger"></i> by <strong>M Rizky Apryansyah</strong></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
