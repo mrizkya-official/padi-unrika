@@ -90,39 +90,32 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top py-2">
-    <!-- Tetap gunakan container agar ada batas aman kiri-kanan -->
-    <div class="container">
-        
-        <!-- Gunakan inline style 'padding-left: 0' untuk merapatkan logo ke sisi kiri container -->
-        <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html" style="padding-left: 0;">
-            <img src="assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo">
-            <div class="brand-text-container">
-                <div class="brand-title">Perpustakaan</div>
-                <div class="brand-title">Universitas Riau Kepulauan</div>
-                <div class="brand-tagline">Koleksi & Layanan Digital</div>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html" style="padding-left: 0;">
+                <img src="assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo" style="height: 40px; margin-right: 10px;">
+                <div class="brand-text-container">
+                    <div class="brand-title fw-bold" style="font-size: 0.95rem;">Perpustakaan</div>
+                    <div class="brand-title" style="font-size: 0.8rem;">Universitas Riau Kepulauan</div>
+                </div>
+            </a>       
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">BERANDA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil.html">PROFIL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="layanan.html">LAYANAN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="daftar-hadir.html">DAFTAR HADIR</a></li>
+                    <li class="nav-item"><a class="nav-link" href="referensi.html">REFERENSI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kebijakan.html">KEBIJAKAN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pedoman.html">PEDOMAN AKADEMIK</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="kontak.html">KONTAK</a></li>
+                </ul>
             </div>
-        </a>   
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="index.html">BERANDA</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="profil.html">PROFIL</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="layanan.html">LAYANAN</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="referensi.html">REFERENSI</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="prosiding.html">PROSIDING</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="repositori.html">REPOSITORI</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="kebijakan.html">KEBIJAKAN</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="pedoman.html">PEDOMAN</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="kontak.html">KONTAK</a></li>
-            </ul>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <header class="bg-primary text-white py-5">
         <div class="container text-center">
