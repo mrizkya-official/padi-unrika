@@ -3,18 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Universitas Riau Kepulauan (UNRIKA)</title>
+    <title>Kontak - Perpustakaan Universitas Riau Kepulauan (UNRIKA)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
+        /* TEMA DARK LUXURY OVERRIDE */
+        body { 
+            background-color: #0a0a0a !important; 
+            color: #ffffff !important; 
+        }
+        
+        /* Navbar Dark */
+        .navbar { 
+            background-color: rgba(15, 23, 42, 0.9) !important; 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #334155 !important; 
+        }
+        .navbar .nav-link { color: #94a3b8 !important; }
+        .navbar .nav-link:hover, .navbar .nav-link.active { color: #38bdf8 !important; }
+        .brand-title, .brand-subtitle, .brand-tagline { color: #ffffff !important; }
+
+        /* Header */
+        header.bg-primary { 
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a) !important; 
+            border-bottom: 2px solid #D4AF37;
+        }
+
+        /* Card & Section */
+        .card { 
+            background-color: #1e293b !important; 
+            border: 1px solid #334155 !important; 
+        }
+        
+        h1, h2, h3, h4, h5 { color: #ffffff !important; }
+        .text-primary { color: #38bdf8 !important; }
+        .text-secondary, .text-muted { color: #94a3b8 !important; }
+        
+        /* Spesifik Elemen */
+        .bg-light { background-color: #121212 !important; }
+        .card-body p, .card-body li { color: #f1f5f9 !important; }
+
         .contact-card {
             transition: transform 0.3s;
-            border-top: 5px solid #0d6efd;
+            border-top: 5px solid #38bdf8 !important;
         }
         .contact-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5) !important;
         }
         .map-container {
             position: relative;
@@ -28,21 +65,27 @@
             width: 100%;
             height: 100%;
             border: 0;
+            filter: grayscale(20%) contrast(120%);
+        }
+
+        /* Footer */
+        footer.bg-dark { 
+            background-color: #020617 !important;
+            border-top: 1px solid #334155 !important; 
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top py-2">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top py-2">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html">
-                <img src="assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo">
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html" style="padding-left: 0;">
+                <img src="assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo" style="height: 40px; margin-right: 10px;">
                 <div class="brand-text-container">
-                    <div class="brand-title">Perpustakaan</div>
-                    <div class="brand-subtitle">Universitas Riau Kepulauan</div>
-                    <div class="brand-tagline">Koleksi & Layanan Digital</div>
+                    <div class="brand-title fw-bold" style="font-size: 0.95rem;">Perpustakaan</div>
+                    <div class="brand-title" style="font-size: 0.8rem;">Universitas Riau Kepulauan</div>
                 </div>
-            </a>   
+            </a>       
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -55,8 +98,8 @@
                     <li class="nav-item"><a class="nav-link" href="referensi.html">REFERENSI</a></li>
                     <li class="nav-item"><a class="nav-link" href="kebijakan.html">KEBIJAKAN</a></li>
                     <li class="nav-item"><a class="nav-link" href="pedoman.html">PEDOMAN AKADEMIK</a></li>
-                    <li class="nav-item"><a class="nav-link" href="kontak.html">KONTAK</a></li>
-</ul>
+                    <li class="nav-item"><a class="nav-link active" href="kontak.html">KONTAK</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -64,7 +107,7 @@
     <header class="bg-primary text-white py-5">
         <div class="container text-center">
             <h1 class="fw-bold">Hubungi Kami</h1>
-            <p class="lead">Jangan ragu untuk menghubungi kami jika memiliki pertanyaan atau kendala</p>
+            <p class="lead mb-0 text-muted">Jangan ragu untuk menghubungi kami jika memiliki pertanyaan atau kendala</p>
         </div>
     </header>
 
@@ -106,8 +149,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
-                        <div class="card-header bg-white py-3">
-                            <h5 class="fw-bold mb-0 text-center"><i class="fa-solid fa-map-location-dot me-2"></i> Lokasi Perpustakaan UNRIKA di Peta</h5>
+                        <div class="card-header bg-dark text-white py-3 border-bottom border-secondary">
+                            <h5 class="fw-bold mb-0 text-center text-primary"><i class="fa-solid fa-map-location-dot me-2"></i> Lokasi Perpustakaan UNRIKA di Peta</h5>
                         </div>
                         <div class="map-container">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1499789074937!2d103.96581207581737!3d1.0487363624679706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98de61cee5c59%3A0x4898bf40ffd100a2!2sUNRIKA%20BATAM!5e0!3m2!1sen!2sid!4v1782826573343!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -120,7 +163,7 @@
 
     <footer class="bg-dark text-light py-4 text-center mt-auto">
         <div class="container">
-            <p class="mb-0">&copy; 2026 Perpustakaan Universitas Riau Kepulauan (UNRIKA). All Rights Reserved.</p>
+            <p class="mb-0 text-muted">&copy; 2026 Perpustakaan Universitas Riau Kepulauan (UNRIKA). All Rights Reserved.</p>
             <p class="mb-0 small text-white mt-1">Developed with <i class="fa-solid fa-heart text-danger"></i> by <strong>M Rizky Apryansyah</strong></p>
         </div>
     </footer>
