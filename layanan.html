@@ -3,34 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Universitas Riau Kepulauan (UNRIKA)</title>
+    <title>Layanan - Perpustakaan Universitas Riau Kepulauan (UNRIKA)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
+        /* TEMA DARK LUXURY OVERRIDE */
+        body { 
+            background-color: #0a0a0a !important; 
+            color: #ffffff !important; 
+        }
+        
+        /* Navbar Dark */
+        .navbar { 
+            background-color: rgba(15, 23, 42, 0.9) !important; 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #334155 !important; 
+        }
+        .navbar .nav-link { color: #94a3b8 !important; }
+        .navbar .nav-link:hover, .navbar .nav-link.active { color: #38bdf8 !important; }
+        .brand-title, .brand-subtitle, .brand-tagline { color: #ffffff !important; }
+
+        /* Header */
+        header.bg-primary { 
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a) !important; 
+            border-bottom: 2px solid #D4AF37;
+        }
+
+        /* Card & Section */
+        .card { 
+            background-color: #1e293b !important; 
+            border: 1px solid #334155 !important; 
+        }
         .card-layanan {
             transition: transform 0.3s, box-shadow 0.3s;
-            border-left: 5px solid #0d6efd;
+            border-left: 5px solid #38bdf8 !important;
         }
         .card-layanan:hover {
             transform: translateY(-5px);
             box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+            border-color: #38bdf8 !important;
+        }
+        
+        h1, h2, h3, h4, h5 { color: #ffffff !important; }
+        .text-primary { color: #38bdf8 !important; }
+        .text-secondary, .text-muted { color: #94a3b8 !important; }
+        
+        /* Spesifik Elemen */
+        .bg-light { background-color: #121212 !important; }
+        .card-body p, .card-body li { color: #f1f5f9 !important; }
+        
+        /* Footer */
+        footer.bg-dark { 
+            background-color: #020617 !important;
+            border-top: 1px solid #334155 !important; 
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top py-2">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top py-2">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html">
-                <img src="assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo">
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html" style="padding-left: 0;">
+                <img src="assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo" style="height: 40px; margin-right: 10px;">
                 <div class="brand-text-container">
-                    <div class="brand-title">Perpustakaan</div>
-                    <div class="brand-subtitle">Universitas Riau Kepulauan</div>
-                    <div class="brand-tagline">Koleksi & Layanan Digital</div>
+                    <div class="brand-title fw-bold" style="font-size: 0.95rem;">Perpustakaan</div>
+                    <div class="brand-title" style="font-size: 0.8rem;">Universitas Riau Kepulauan</div>
                 </div>
-            </a>   
+            </a>       
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,13 +79,13 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">BERANDA</a></li>
                     <li class="nav-item"><a class="nav-link" href="profil.html">PROFIL</a></li>
-                    <li class="nav-item"><a class="nav-link" href="layanan.html">LAYANAN</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="layanan.html">LAYANAN</a></li>
                     <li class="nav-item"><a class="nav-link" href="daftar-hadir.html">DAFTAR HADIR</a></li>
                     <li class="nav-item"><a class="nav-link" href="referensi.html">REFERENSI</a></li>
                     <li class="nav-item"><a class="nav-link" href="kebijakan.html">KEBIJAKAN</a></li>
                     <li class="nav-item"><a class="nav-link" href="pedoman.html">PEDOMAN AKADEMIK</a></li>
                     <li class="nav-item"><a class="nav-link" href="kontak.html">KONTAK</a></li>
-</ul>
+                </ul>
             </div>
         </div>
     </nav>
@@ -52,106 +93,104 @@
     <header class="bg-primary text-white py-5">
         <div class="container text-center">
             <h1 class="fw-bold">Layanan Perpustakaan</h1>
-            <p class="lead">Berbagai kemudahan akses layanan akademik untuk Civitas Academica UNRIKA</p>
+            <p class="lead mb-0 text-muted">Berbagai kemudahan akses layanan akademik untuk Civitas Academica UNRIKA</p>
         </div>
     </header>
 
     <section class="py-5 bg-light">
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 
                 <div class="col-md-6">
-                    <div class="card card-layanan h-100 border-0 shadow-sm p-3">
+                    <div class="card card-layanan h-100 shadow-sm p-3">
                         <div class="card-body d-flex align-items-start">
                             <div class="fs-2 text-primary me-3"><i class="fa-solid fa-id-card"></i></div>
                             <div>
-                                <h4 class="card-title fw-bold">Bebas Pustaka</h4>
+                                <h4 class="card-title fw-bold text-white">Bebas Pustaka</h4>
                                 <p class="card-text text-muted">Pengajuan surat keterangan bebas pustaka bagi mahasiswa tingkat akhir sebagai syarat kelulusan dan yudisium.</p>
-                                <a href="pages/bebas-pustaka.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Ajukan Bebas Pustaka</a>
+                                <a href="pages/bebas-pustaka.html" target="_blank" class="btn btn-outline-primary btn-sm mt-2"><i class="fa-solid fa-external-link-alt"></i> Ajukan Bebas Pustaka</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card card-layanan h-100 border-0 shadow-sm p-3">
+                    <div class="card card-layanan h-100 shadow-sm p-3">
                         <div class="card-body d-flex align-items-start">
                             <div class="fs-2 text-primary me-3"><i class="fa-solid fa-file-shield"></i></div>
                             <div>
-                                <h4 class="card-title fw-bold">Cek Plagiarisme</h4>
+                                <h4 class="card-title fw-bold text-white">Cek Plagiarisme</h4>
                                 <p class="card-text text-muted">Layanan pengecekan tingkat kemiripan (Turnitin) untuk naskah skripsi, jurnal, atau karya ilmiah mahasiswa dan dosen.</p>
-                                <a href="pages/cek-plagiarisme.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Ajukan Cek Plagiat</a>
+                                <a href="pages/cek-plagiarisme.html" target="_blank" class="btn btn-outline-primary btn-sm mt-2"><i class="fa-solid fa-external-link-alt"></i> Ajukan Cek Plagiat</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card card-layanan h-100 border-0 shadow-sm p-3">
+                    <div class="card card-layanan h-100 shadow-sm p-3">
                         <div class="card-body d-flex align-items-start">
                             <div class="fs-2 text-primary me-3"><i class="fa-solid fa-comments"></i></div>
                             <div>
-                                <h4 class="card-title fw-bold">Layanan Konsultasi</h4>
+                                <h4 class="card-title fw-bold text-white">Layanan Konsultasi</h4>
                                 <p class="card-text text-muted">Butuh bantuan atau panduan penelusuran referensi, sitasi, dan literatur ilmiah? Silakan ajukan konsultasi dengan pustakawan.</p>
-                                <a href="pages/layanan-konsultasi.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Mulai Konsultasi</a>
+                                <a href="pages/layanan-konsultasi.html" target="_blank" class="btn btn-outline-primary btn-sm mt-2"><i class="fa-solid fa-external-link-alt"></i> Mulai Konsultasi</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card card-layanan h-100 border-0 shadow-sm p-3">
+                    <div class="card card-layanan h-100 shadow-sm p-3">
                         <div class="card-body d-flex align-items-start">
                             <div class="fs-2 text-primary me-3"><i class="fa-solid fa-face-smile-beam"></i></div>
                             <div>
-                                <h4 class="card-title fw-bold">Survei Kepuasan Pelayanan</h4>
+                                <h4 class="card-title fw-bold text-white">Survei Kepuasan Pelayanan</h4>
                                 <p class="card-text text-muted">Bantu kami meningkatkan kualitas layanan perpustakaan dengan mengisi survei kepuasan pengunjung secara berkala.</p>
-                                <a href="pages/cek-kepuasan.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Isi Survei</a>
+                                <a href="pages/cek-kepuasan.html" target="_blank" class="btn btn-outline-primary btn-sm mt-2"><i class="fa-solid fa-external-link-alt"></i> Isi Survei</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card card-layanan h-100 border-0 shadow-sm p-3">
+                    <div class="card card-layanan h-100 shadow-sm p-3">
                         <div class="card-body d-flex align-items-start">
                             <div class="fs-2 text-primary me-3"><i class="fa-solid fa-magnifying-glass"></i></div>
                             <div>
-                                <h4 class="card-title fw-bold">Cari Referensi Buku</h4>
-                                <p class="card-text text-muted">Cari judul buku, skripsi, atau literatur yang tersedia sebagai referensi</p>
-                                <a href="https://www.perpusnas.go.id/" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Buka Katalog Buku</a>
+                                <h4 class="card-title fw-bold text-white">Cari Referensi Buku</h4>
+                                <p class="card-text text-muted">Cari judul buku, skripsi, atau literatur yang tersedia sebagai referensi.</p>
+                                <a href="https://www.perpusnas.go.id/" target="_blank" class="btn btn-outline-primary btn-sm mt-2"><i class="fa-solid fa-external-link-alt"></i> Buka Katalog Buku</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card card-layanan h-100 border-0 shadow-sm p-3">
+                    <div class="card card-layanan h-100 shadow-sm p-3">
                         <div class="card-body d-flex align-items-start">
                             <div class="fs-2 text-primary me-3"><i class="fa-solid fa-hand-holding-heart"></i></div>
                             <div>
-                                <h4 class="card-title fw-bold">Pengembangan Perpustakaan</h4>
+                                <h4 class="card-title fw-bold text-white">Pengembangan Perpustakaan</h4>
                                 <p class="card-text text-muted">Formulir pelaporan atau konfirmasi bagi mahasiswa/dosen/umum yang ingin berkontribusi dalam pengembangan perpustakaan.</p>
-                                <a href="pages/cek-sumbangan-buku.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Ajukan Kontribusi</a>
+                                <a href="pages/cek-sumbangan-buku.html" target="_blank" class="btn btn-outline-primary btn-sm mt-2"><i class="fa-solid fa-external-link-alt"></i> Ajukan Kontribusi</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <center>
                 <div class="col-md-6">
-                    <div class="card card-layanan h-100 border-0 shadow-sm p-3">
+                    <div class="card card-layanan h-100 shadow-sm p-3">
                         <div class="card-body d-flex align-items-start">
-                            <div class="fs-2 text-primary me-3"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                            <div class="fs-2 text-primary me-3"><i class="fa-solid fa-book-bookmark"></i></div>
                             <div>
-                                <h4 class="card-title fw-bold">Layanan Pengumpulan Tugas Akhir</h4>
-                                <p class="card-text text-muted">Formulir pengumpulan Tugas Akhir (SKRIPSI/TESIS DAN JURNAL)</p>
-                                <a href="pages/layanan-tugas-akhir.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Ajukan Pengumpulan Tugas Akhir</a>
+                                <h4 class="card-title fw-bold text-white">Layanan Pengumpulan Tugas Akhir</h4>
+                                <p class="card-text text-muted">Formulir pengumpulan Tugas Akhir (SKRIPSI / TESIS DAN JURNAL).</p>
+                                <a href="pages/layanan-tugas-akhir.html" target="_blank" class="btn btn-outline-primary btn-sm mt-2"><i class="fa-solid fa-external-link-alt"></i> Ajukan Pengumpulan Tugas Akhir</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                </center>
                 
             </div>
         </div>
@@ -159,7 +198,7 @@
 
     <footer class="bg-dark text-light py-4 text-center mt-auto">
         <div class="container">
-            <p class="mb-0">&copy; 2026 Perpustakaan Universitas Riau Kepulauan (UNRIKA). All Rights Reserved.</p>
+            <p class="mb-0 text-muted">&copy; 2026 Perpustakaan Universitas Riau Kepulauan (UNRIKA). All Rights Reserved.</p>
             <p class="mb-0 small text-white mt-1">Developed with <i class="fa-solid fa-heart text-danger"></i> by <strong>M Rizky Apryansyah</strong></p>
         </div>
     </footer>
