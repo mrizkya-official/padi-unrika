@@ -8,74 +8,130 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
+        /* TEMA DARK LUXURY OVERRIDE */
+        body { 
+            background-color: #0a0a0a !important; 
+            color: #ffffff !important; 
+        }
+        
+        /* Navbar Dark */
+        .navbar { 
+            background-color: rgba(15, 23, 42, 0.9) !important; 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #334155 !important; 
+        }
+        .navbar .nav-link { color: #94a3b8 !important; }
+        .navbar .nav-link:hover, .navbar .nav-link.active { color: #38bdf8 !important; }
+        .brand-title, .brand-subtitle, .brand-tagline { color: #ffffff !important; }
+
+        /* Dropdown Menu Dark */
+        .dropdown-menu {
+            background-color: #1e293b !important;
+            border: 1px solid #334155 !important;
+        }
+        .dropdown-item {
+            color: #94a3b8 !important;
+        }
+        .dropdown-item:hover {
+            background-color: #0f172a !important;
+            color: #38bdf8 !important;
+        }
+
+        /* Header */
+        header.bg-primary { 
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a) !important; 
+            border-bottom: 2px solid #D4AF37;
+        }
+
+        /* Card & Section */
+        .card { 
+            background-color: #1e293b !important; 
+            border: 1px solid #334155 !important; 
+        }
+        
+        h1, h2, h3, h4, h5 { color: #ffffff !important; }
+        .text-primary { color: #38bdf8 !important; }
+        .text-secondary, .text-muted { color: #94a3b8 !important; }
+        .text-dark { color: #ffffff !important; }
+        
+        /* Spesifik Elemen */
+        .bg-light { background-color: #121212 !important; }
+        .bg-white { background-color: #1e293b !important; }
+        .card-body p, .card-body li { color: #f1f5f9 !important; }
+
         .alur-img {
             max-width: 100%;
             height: auto;
             border-radius: 12px;
-            border: 5px solid #fff;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            border: 5px solid #334155;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
         }
         .card-download {
             transition: transform 0.3s, box-shadow 0.3s;
-            border-left: 5px solid #0d6efd;
+            border-left: 5px solid #38bdf8 !important;
         }
         .card-download:hover {
             transform: translateY(-5px);
-            box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+            box-shadow: 0 1rem 3rem rgba(0,0,0,0.5) !important;
+            border-color: #38bdf8 !important;
         }
         .qr-img {
-            max-width: 200px;
+            max-width: 180px;
             height: auto;
+        }
+
+        .alert-primary {
+            background-color: #0f172a !important;
+            border-color: #334155 !important;
+            color: #38bdf8 !important;
+        }
+
+        /* Footer */
+        footer.bg-dark { 
+            background-color: #020617 !important;
+            border-top: 1px solid #334155 !important; 
         }
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top py-2">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top py-2">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="../index.html">
-                <img src="../assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo">
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html" style="padding-left: 0;">
+                <img src="../assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo" style="height: 40px; margin-right: 10px;">
                 <div class="brand-text-container">
-                    <div class="brand-title">Perpustakaan</div>
-                    <div class="brand-subtitle">Universitas Riau Kepulauan</div>
-                    <div class="brand-tagline">Koleksi & Layanan Digital</div>
+                    <div class="brand-title fw-bold" style="font-size: 0.95rem;">Perpustakaan</div>
+                    <div class="brand-title" style="font-size: 0.8rem;">Universitas Riau Kepulauan</div>
                 </div>
-            </a>   
+            </a>       
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">BERANDA</a></li>
                     <li class="nav-item"><a class="nav-link" href="../profil.html">PROFIL</a></li>
                     <li class="nav-item"><a class="nav-link" href="../layanan.html">LAYANAN</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownInfo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        INFORMASI
-                        </a>
-                        <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdownInfo">
-                            <li><a class="dropdown-item" href="layanan-lldikti.html">Layanan LLDIKTI</a></li>
-                            <li><a class="dropdown-item" href="#">JURNAL UNRIKA</a></li>
-                            <li><a class="dropdown-item" href="#">PROSIDING</a></li>
-                            <li><a class="dropdown-item" href="#">REPOSITORI</a></li>
-                        </ul>
-                    </li>
-    <li class="nav-item"><a class="nav-link" href="../daftar-hadir.html">DAFTAR HADIR</a></li>
-    <li class="nav-item"><a class="nav-link" href="../referensi.html">REFERENSI</a></li>
-    <li class="nav-item"><a class="nav-link" href="../kontak.html">KONTAK</a></li>
-</ul>
+                    <li class="nav-item"><a class="nav-link" href="../referensi.html">REFERENSI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../prosiding.html">PROSIDING</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../repositori.html">REPOSITORI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../kebijakan.html">KEBIJAKAN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pedoman.html">PEDOMAN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../kontak.html">KONTAK</a></li>
+                </ul>
             </div>
         </div>
-    </nav> 
+    </nav>  
 
     <header class="bg-primary text-white py-5">
         <div class="container text-center">
             <h1 class="fw-bold">Layanan Tugas Akhir</h1>
-            <p class="lead mb-0">Panduan unggah mandiri skripsi, jurnal, dan tesis ke repositori perpustakaan UNRIKA</p>
+            <p class="lead mb-0 text-muted">Panduan unggah mandiri skripsi, jurnal, dan tesis ke repositori perpustakaan UNRIKA</p>
         </div>
     </header>
 
-    <section class="py-5">
+    <section class="py-5 bg-light">
         <div class="container">
             <div class="row g-4 justify-content-center">
                 <!-- Ketentuan -->
@@ -83,7 +139,7 @@
                     <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 bg-light border-start border-primary border-5">
                         <div class="card-body">
                             <h3 class="card-title text-primary fw-bold mb-3"><i class="fa-solid fa-file-lines me-2"></i> Ketentuan Tugas Akhir</h3>
-                            <p class="card-text text-secondary" style="line-height: 1.7;">
+                            <p class="card-text text-secondary mb-0" style="line-height: 1.7;">
                                 Layanan ini mencakup pengelolaan naskah akademik (Skripsi, Jurnal, Tesis) yang akan diunggah ke repositori digital Perpustakaan UNRIKA. Mahasiswa wajib memastikan dokumen telah sesuai dengan format, bebas plagiarisme, dan telah disetujui oleh dosen pembimbing.
                             </p>
                         </div>
@@ -96,15 +152,18 @@
                         <div class="card-body">
                             <h4 class="card-title fw-bold text-dark mb-3">Unggah Tugas Akhir (Jurnal/Skripsi/Tesis)</h4>
                             <p class="card-text text-muted mb-4">Akses platform unggah mandiri melalui QR Code di bawah ini:</p>
-                            <div class="qr-container mb-3">
+                            
+                            <div class="qr-container bg-white p-3 d-inline-block rounded-3 border border-secondary mb-3">
                                 <img src="../assets/img/qr-formulir-tugas akhir.png" alt="QR Layanan Tugas Akhir" class="qr-img">
                             </div>
+                            
                             <div class="mt-2">
                                 <p class="small text-muted">Arahkan kamera ponsel Anda ke QR di atas</p>
                             </div>
+                            
                             <div class="alert alert-primary py-3 px-3 small rounded-3 mt-3" role="alert">
                                 <i class="fa-solid fa-link me-2"></i> Atau akses melalui tautan berikut:<br>
-                                <a href="https://drive.google.com/drive/folders/1kT4SJBwu6ii7k1RNeT6wWou1O6gpqvKb" target="_blank" class="text-decoration-none fw-bold d-block mt-1 text-break">
+                                <a href="https://drive.google.com/drive/folders/1kT4SJBwu6ii7k1RNeT6wWou1O6gpqvKb" target="_blank" class="text-decoration-none fw-bold d-block mt-1 text-break text-info">
                                     https://acesse.one/x4sw8h4
                                 </a>
                             </div>
@@ -117,8 +176,8 @@
 
     <footer class="bg-dark text-light py-4 text-center mt-auto">
         <div class="container">
-            <p class="mb-0">&copy; 2026 Perpustakaan Universitas Riau Kepulauan (UNRIKA). All Rights Reserved.</p>
-            <p class="mb-0 small text-white mt-1">Developed by <strong>M Rizky Apryansyah</strong></p>
+            <p class="mb-0 text-muted">&copy; 2026 Perpustakaan Universitas Riau Kepulauan (UNRIKA). All Rights Reserved.</p>
+            <p class="mb-0 small text-white mt-1">Developed with <i class="fa-solid fa-heart text-danger"></i> by <strong>M Rizky Apryansyah</strong></p>
         </div>
     </footer>
 
