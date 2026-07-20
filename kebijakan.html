@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Akademik - Perpustakaan Universitas Riau Kepulauan (UNRIKA)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* TEMA DARK LUXURY OVERRIDE */
+        body { 
+            background-color: #0a0a0a !important; 
+            color: #ffffff !important; 
+        }
+        
+        /* Navbar Dark */
+        .navbar { 
+            background-color: rgba(15, 23, 42, 0.9) !important; 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #334155 !important; 
+        }
+        .navbar .nav-link { color: #94a3b8 !important; }
+        .navbar .nav-link:hover, .navbar .nav-link.active { color: #38bdf8 !important; }
+        .brand-title, .brand-subtitle, .brand-tagline { color: #ffffff !important; }
+
+        /* Dropdown Menu Dark */
+        .dropdown-menu {
+            background-color: #1e293b !important;
+            border: 1px solid #334155 !important;
+        }
+        .dropdown-item {
+            color: #94a3b8 !important;
+        }
+        .dropdown-item:hover {
+            background-color: #0f172a !important;
+            color: #38bdf8 !important;
+        }
+
+        /* Header */
+        header.bg-primary { 
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a) !important; 
+            border-bottom: 2px solid #D4AF37;
+        }
+
+        /* Card & Section */
+        .card { 
+            background-color: #1e293b !important; 
+            border: 1px solid #334155 !important; 
+        }
+        
+        h1, h2, h3, h4, h5 { color: #ffffff !important; }
+        .text-primary { color: #38bdf8 !important; }
+        .text-secondary, .text-muted { color: #94a3b8 !important; }
+        .text-dark { color: #ffffff !important; }
+        
+        /* Spesifik Elemen */
+        .bg-light { background-color: #121212 !important; }
+        .bg-white { background-color: #1e293b !important; }
+        .card-body p, .card-body li { color: #f1f5f9 !important; }
+
+        .card-policy {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 5px solid #38bdf8 !important;
+        }
+        .card-policy:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,0.5) !important;
+            border-color: #38bdf8 !important;
+        }
+
+        .icon-box {
+            font-size: 3rem;
+            color: #38bdf8;
+        }
+
+        .pdf-viewer-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #334155;
+            background-color: #0f172a;
+        }
+
+        /* Footer */
+        footer.bg-dark { 
+            background-color: #020617 !important;
+            border-top: 1px solid #334155 !important; 
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html" style="padding-left: 0;">
+                <img src="assets/img/logo-unrika.png" alt="Logo UNRIKA" class="navbar-logo" style="height: 40px; margin-right: 10px;">
+                <div class="brand-text-container">
+                    <div class="brand-title fw-bold" style="font-size: 0.95rem;">Perpustakaan</div>
+                    <div class="brand-title" style="font-size: 0.8rem;">Universitas Riau Kepulauan</div>
+                </div>
+            </a>       
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">BERANDA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil.html">PROFIL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="layanan.html">LAYANAN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="referensi.html">REFERENSI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prosiding.html">PROSIDING</a></li>
+                    <li class="nav-item"><a class="nav-link" href="repositori.html">REPOSITORI</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="kebijakan.html">KEBIJAKAN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pedoman.html">PEDOMAN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">KONTAK</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <header class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold">Kebijakan Akademik & Keputusan Rektor</h1>
+            <p class="lead mb-0 text-muted">Transparansi regulasi dan penetapan kebijakan resmi terkait layanan perpustakaan digital Universitas Riau Kepulauan</p>
+        </div>
+    </header>
+
+    <section class="py-5 flex-grow-1 bg-light">
+        <div class="container">
+            <div class="row g-4 justify-content-center mb-5">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 bg-light border-start border-primary border-5">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary fw-bold mb-3"><i class="fa-solid fa-scale-balanced me-2"></i> Ketentuan Kontribusi Layanan Perpustakaan Digital</h3>
+                            <p class="card-text text-secondary mb-3" style="line-height: 1.7;">
+                                Berdasarkan Keputusan Rektor Universitas Riau Kepulauan Nomor 097/KPTS/R/UNRIKA/VII/2026, terjadi penyesuaian bentuk kontribusi mahasiswa tahap akhir[cite: 2]. Yang semula berupa sumbangan buku fisik, kini dialihkan menjadi kontribusi dana setara tiga buku guna mendukung transformasi penuh menuju perpustakaan digital[cite: 2], pengadaan e-book, langganan jurnal elektronik, serta peningkatan sistem repository institusi[cite: 2].
+                            </p>
+                            <ul class="text-secondary mb-0" style="line-height: 1.6;">
+                                <li><strong>Program Sarjana (S1):</strong> Rp300.000,-[cite: 2]</li>
+                                <li><strong>Program Magister (S2):</strong> Rp400.000,-[cite: 2]</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Tampilan PDF -->
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card card-policy border-0 shadow-sm p-4 rounded-4">
+                        <div class="card-body">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
+                                <div class="mb-3 mb-md-0 text-center text-md-start">
+                                    <h4 class="card-title fw-bold text-dark mb-1"><i class="fa-solid fa-file-pdf text-danger me-2"></i> Dokumen Resmi Keputusan Rektor</h4>
+                                    <p class="text-muted small mb-0">Nomor 097/KPTS/R/UNRIKA/VII/2026[cite: 2]</p>
+                                </div>
+                                <div>
+                                    <a href="../assets/pdf/keputusan-rektor-perpus-digital.pdf" target="_blank" class="btn btn-primary fw-bold shadow-sm">
+                                        <i class="fa-solid fa-download me-2"></i> Unduh Dokumen PDF
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Viewer PDF -->
+                            <div class="pdf-viewer-container shadow-sm">
+                                <iframe src="../assets/pdf/keputusan-rektor-perpus-digital.pdf" width="100%" height="100%" style="border: none;">
+                                    <div class="text-center p-5">
+                                        <p class="text-muted">Peramban Anda tidak mendukung pratinjau PDF. Silakan unduh file melalui tombol di atas.</p>
+                                    </div>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4 text-center mt-auto">
+        <div class="container">
+            <p class="mb-0 text-muted">&copy; 2026 Perpustakaan Universitas Riau Kepulauan (UNRIKA). All Rights Reserved.</p>
+            <p class="mb-0 small text-white mt-1">Developed with <i class="fa-solid fa-heart text-danger"></i> by <strong>M Rizky Apryansyah</strong></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
